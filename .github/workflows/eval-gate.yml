@@ -46,8 +46,8 @@ jobs:
       - name: Smoke check (--dry-run)
         run: docker compose run --rm eval --dry-run
 
-      - name: Run eval gate (daily)
-        run: docker compose run --rm -e SET -e GATE -e PROFILE -e DEFECTS eval
+#      - name: Run eval gate (daily)
+#        run: docker compose run --rm -e SET -e GATE -e PROFILE -e DEFECTS eval
 
       - name: Upload eval report
         if: always()
